@@ -37,7 +37,7 @@ public class FindDupOptimized {
 			}
 		int flag=0;
 		for(int i=0;i<dup.length;i++) {
-			if(dup[i]=="ALREADY VISITED") {
+			if(dup[i].equals("ALREADY VISITED")) {
 				System.out.print(i+" ");
 				flag=1;
 			}
