@@ -18,7 +18,7 @@ public class Calculator {
 		case "-":System.out.println("result:"+ (x-y));break;
 		case "*":System.out.println("result:"+ (x*y));break;
 		case "/":if (y==0) {System.out.println("error:division by 0");break;}
-		         System.out.println("result:"+ (x+y));break;
+		         System.out.println("result:"+ (x/y));break;
 		
 		case "%":if (y==0) {System.out.println("error:division by 0");break;}
 			     System.out.println("result:"+ (x%y));break;
