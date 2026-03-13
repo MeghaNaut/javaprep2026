@@ -44,7 +44,7 @@ public class FindDupOptimized {
 		}
 		if(flag==0) {
 			System.out.println("no dup!!");
-		}
+		} 
 
 	}
 
