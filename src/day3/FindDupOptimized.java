@@ -22,29 +22,26 @@ public class FindDupOptimized {
 		}
 		
 		
-		String[] dup=new String[max+1];
-		
+		boolean[] dup=new boolean[max+1];
+		boolean[] printed=new boolean[max+1];
+		int flag=0;
 		
 		for(int i=0;i<arr.length;i++) {
 			
-			if(dup[arr[i]].equals("TRUE")|| dup[arr[i]].equals("ALREADY VISITED"))
-				dup[arr[i]]="ALREADY VISITED";
-			else
-					dup[arr[i]]="TRUE";
-				
-				
-				
-			}
-		int flag=0;
-		for(int i=0;i<dup.length;i++) {
-			if(dup[i].equals("ALREADY VISITED")) {
-				System.out.print(i+" ");
+			if(dup[arr[i]]==true && printed[arr[i]]==false) {
+				System.out.println(arr[i]);
+				printed[arr[i]]=true;
 				flag=1;
 			}
+			else 
+			{dup[arr[i]]=true;
+			}
+			
 		}
+		
 		if(flag==0) {
-			System.out.println("no dup!!");
-		} 
+			System.out.println("No duplicate");
+		}
 
 	}
 
